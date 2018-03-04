@@ -4,4 +4,3 @@ For /f "tokens=1-2 delims=/:" %%a in ('time /t') do (set mytime=%%a%%b)
 echo %mydate%_%mytime%
 
 node server.js >> log_%mydate%_%mytime%.txt
-pause
